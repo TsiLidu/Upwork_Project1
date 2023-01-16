@@ -10,7 +10,10 @@ folder_name = []
 image_name = []
 
 #get or assign current directory as path
-path_to_file = '../Tsi_Lidu/Upwork description.docx'
+current_path = os.getcwd()
+file=input("!!!!Please input Full file name with extention(e.g file.docx or Test.docx\n!!!!!!!MAKE SURE DOC FILE IS ON THE SAME fOLDER AS THIS FILE(CODE)!!!->  ")
+path_to_file = os.path.join(current_path,file)
+print("path-to-file{}".format(path_to_file))
 path_to_image = 'C:/Users/ERT/Desktop/work/Tsi_Lidu/Temp'
 temp_folder = './Temp'
 
